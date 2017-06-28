@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import '../styles/index.css';
 import MemeItem from './MemeItem';
+import MyMemes from './MyMemes';
 import { Form, FormControl, FormGroup, ControlLabel } from 'react-bootstrap';
+
 
 class App extends Component {
   constructor() {
@@ -17,6 +19,7 @@ class App extends Component {
     return (
       <div>
       <h2>Welcome to the meme generator</h2>
+      <MyMemes />
       <h4><i>Write Some Text</i></h4>
       <Form inline>
         <FormGroup>
